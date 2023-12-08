@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "reto1": "ts-node ./retos/reto1.ts"
+    "reto1": "ts-node ./retos/reto1.ts",
+    "reto2": "ts-node ./retos/reto2.ts"
   },
   "keywords": [],
   "author": "",
