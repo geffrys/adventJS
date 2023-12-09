@@ -1,15 +1,15 @@
 
-function manufacture(gifts:string[], materials:string):string[]{
-    let canManufacture:string[] = []
-    let flag:boolean = true;
-    gifts.forEach((gift)=>{
+function manufacture(gifts: string[], materials: string): string[] {
+    let canManufacture: string[] = []
+    let flag: boolean = true;
+    gifts.forEach((gift) => {
         flag = true;
-        [...gift].forEach((m)=>{
-            if(materials.includes(m) == false){
+        [...gift].forEach((m) => {
+            if (materials.includes(m) == false) {
                 flag = false;
             }
         });
-        if(flag == true){
+        if (flag == true) {
             canManufacture.push(gift);
         }
     })

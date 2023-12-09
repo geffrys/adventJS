@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "reto1": "ts-node ./retos/reto1.ts",
     "reto2": "ts-node ./retos/reto2.ts",
-    "reto3": "ts-node ./retos/reto3.ts"
+    "reto3": "ts-node ./retos/reto3.ts",
+    "reto4": "ts-node ./retos/reto4.ts"
   },
   "keywords": [],
   "author": "",

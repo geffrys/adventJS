@@ -8,8 +8,8 @@ function findFirstRepeatedId(gifts: number[]): number | undefined {
     let giftsCopy: number[] = gifts
     let repeateds: Toy[] = []
     gifts.forEach((gift, index) => {
-        giftsCopy = gifts.slice(index+1)
-        if (giftsCopy.indexOf(gift)!= -1) {
+        giftsCopy = gifts.slice(index + 1)
+        if (giftsCopy.indexOf(gift) != -1) {
             repeateds.push({
                 elemento: gift,
                 index: index + giftsCopy.findIndex((elementor) => elementor == gift)
@@ -22,7 +22,7 @@ function findFirstRepeatedId(gifts: number[]): number | undefined {
             return a.index - b.index;
         })
         let output = repeateds.shift();
-        if(output?.elemento){
+        if (output?.elemento) {
             return output.elemento
         }
     }
@@ -37,7 +37,7 @@ const case05 = [1, 3, 4, 5, 0, 1, 3, 0, 7]
 let output = findFirstRepeatedId(case02);
 console.log(case02, output, 'case02');
 output = findFirstRepeatedId(case03);
-console.log(case03 ,output, 'case03');
+console.log(case03, output, 'case03');
 output = findFirstRepeatedId(case05);
 console.log(case05, output, 'case05');
 
